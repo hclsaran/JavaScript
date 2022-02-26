@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        document.write("Welcome Java Script"); //print on the browser
+        console.log('Welcome to JavaScript console')//browser console
+
+        //var -> scope level function 
+        //let -> scope level block
+        function sayHello(){
+            for(let i=0;i<5;i++){
+              console.log(i);
+            }
+           // console.log(i);
+        }
+
+
+        sayHello();
+
+        const emp={
+            name:'Leol',
+            printEmp:function(){},
+            printEmp2() {console.log(this)} //es6 standards
+           
+        }
+
+        const x1=emp.printEmp2();
+        console.log(x1);
+
+       
+         let kk1;
+         kk1=2222;
+         console.log('after declaring'+kk1)
+
+      
+        let a;//decleration
+        //var vs let
+         a=10; //initialization
+         console.log(a);
+
+         let a1=10;
+         let b1='10';
+         let xx=true
+         let c1=12
+
+         console.log('a1+b1 = '+(a1+b1));
+         console.log('a1+b1 = '+(b1-a1));
+         console.log(a1==b1);//true
+         console.log(a1===b1);//false
+// Array Destructing
+
+let [first,second,third]=['Apples','Oranges','Strawberry']
+//let [1,2,3]=['Apples','Oranges','Strawberry'];
+let test=['one','two','three'];
+var [aa1,bb2,cb3]=test;
+console.log(aa1);
+console.log(bb2);
+console.log(cb3);
+
+
+
+
+
+
+
+
+
+
+
+/*
+         //bitwise operator
+         let x=2; let y=3;
+         console.log('The value of x&y is '+(x&y))  //2     010  011 result is 010(value 2) 
+         console.log('The value of x|y is '+(x|y))  //3     010  011  result is 011(value 3)
+          let x1=2; let y1=1;
+         console.log('The value of x1<<y1 is '+(x1<<y1))  //4   010   1000(value=4)
+         console.log('The value of x>>y is '+(x1>>y1))  //1     
+         console.log((x>y)?true:false);//ternary operator
+         console.log(typeof(a1));console.log(typeof(b1));console.log(typeof(xx));
+
+         var age=18;
+         if(age >18){
+             console.log('eligible for gettting drivers license')
+         }else{
+             console.log("not eligible")
+         }
+
+         function welcome(name,address){
+             console.log("print this welcome"+name+address);
+         }
+        //pure function
+           function add(a,b){
+           return a+b;
+
+         }
+         console.log(add(2,5));
+
+         let list=[1,2,3];
+         for(let i=0;i<list.length;i++){
+             list[i]=list[i]+1;
+         }
+         console.log(list);
+
+        //functionalprogramming
+        list.map(function(item) {return item+1});
+        console.log(list);
+        list.map(item => item+1);
+        console.log(list);
+       let list2=[1,2,3];
+        let add2=item=>item+1;//2,3,4      
+        let sum=(A,I)=>{return A+I;};
+        let val=list2.map(add2).reduce(sum,0);//9
+        console.log(val);
+*/
+    </script>
+    <form>
+        <input type="button" value="Submit" onclick="welcome('Gabriel','Ny')">
+    </form>
+</body>
+</html>
